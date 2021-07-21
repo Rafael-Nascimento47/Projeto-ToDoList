@@ -27,6 +27,14 @@ const BotaoConclui = () => {
     botaoConclui.classList.add('check-button')
     botaoConclui.innerText = 'Concluir'
 
-    botaoConclui.addEventListener('click', () => {console.log("fui clicado")})
+    botaoConclui.addEventListener('click', concluirTarefa)
     return botaoConclui
 }
+
+const concluirTarefa = (evento) => {
+    const botaoConclui = evento.target
+    const tarefaConcluida = botaoConclui.parentElement
+
+    tarefaConcluida.classList.toggle('done')
+
+}   
