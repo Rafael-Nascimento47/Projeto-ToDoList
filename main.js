@@ -10,7 +10,8 @@ const criarTarefa = (evento) => {
     const valorInput = input.value
     const conteudo = `<p class="content">${valorInput}</p>`
     const tarefa = document.createElement('li')    
-    
+    const calendario = document.querySelector('[data-form-date]')
+    console.log(calendario.value)
     tarefa.classList.add('task')        
     tarefa.innerHTML = conteudo
     
