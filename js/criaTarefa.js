@@ -1,5 +1,6 @@
 import BotaoDeleta from './deletaTarefa.js'
 import BotaoConclui from './concluiTarefa.js'
+import { carregaTarefa } from './carregaTarefa.js'
 
 
 export const handleNovoItem = (evento) => {
@@ -27,6 +28,7 @@ export const handleNovoItem = (evento) => {
 
     input.value = " "
 
+    carregaTarefa()
 }
 
 export const Tarefa = ({valorInput, dataFormatada}) => {
