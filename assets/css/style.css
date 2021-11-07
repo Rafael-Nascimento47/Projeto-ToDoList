@@ -16,9 +16,11 @@ body {
   padding: 1rem;
   min-width: 400px;
   min-height: 300px;
+  border-radius: 0.5rem;
 }
 
 .title {
+  text-align: center;
   border-bottom: 1px solid rgba(246, 241, 209, 0.5);
   font-size: 1.5rem;
   font-family: "BioRhyme", serif;
@@ -68,14 +70,6 @@ body {
   min-height: 100vh;
 }
 
-.todo-list {
-  background-color: #0B2027;
-  font-family: "Space Mono", monospace;
-  padding: 1rem;
-  min-width: 400px;
-  min-height: 300px;
-}
-
 .title {
   border-bottom: 1px solid rgba(246, 241, 209, 0.5);
   font-size: 1.5rem;
@@ -98,15 +92,19 @@ body {
   border-color: rgba(255, 255, 255, 0.1);
 }
 .form-button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: 1px;
   background: #F6F1D1;
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 0.25rem;
+  transition: 0.5s;
+  border-radius: 0.25rem;
 }
 .form-button:hover {
   color: #F6F1D1;
   background: rgba(246, 241, 209, 0.1);
+  transition: 0.5s;
 }
 
 .list {
